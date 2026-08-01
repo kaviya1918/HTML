@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> MY FIRST CSS </title>
+<style>
+h1{
+	color: blue;
+}
+</style>
+<body>
+	<h1> welcome to css </h1>
+	<p style="color:green"> I am learning web development </p>
+	<p style="color:purple"> HTML creates the structure </p>
+	<p style="color:Red"> CSS makes the webpage beautiful </p>
+</body>
+</html>
+~
+~
