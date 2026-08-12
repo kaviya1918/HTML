@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>  position fixed and z index </title>
+<style>
+body{
+	height:1000px;
+}
+
+.box{
+	width:200px;
+	height:100px;
+	background-color:lightgreen;
+	border:2px solid black;
+	position:fixed;
+	bottom:20px;
+	left:20px;
+}
+
+.front{
+	width:150px;
+	height:100px;
+	background-color:pink;
+	position:absolute;
+	top:100px;
+	right:100px;
+	z-index:2;
+}
+
+.back{
+	width:150px;
+	height:100px;
+	background-color:lightblue;
+	position:absolute;
+	top:130px;
+	left:100px;
+	z-index:1;
+}
+
+</style>
+	</head>
+	<body>
+		<h1> CSS position </h1>
+		<div class="front"> front box </div>
+		<div class="back"> back box </div>
+		<div class="box"> fixed box </div>
+	</body>
+</html>
