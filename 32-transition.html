@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> CSS transition </title>
+<style>
+
+button{
+	padding:12px 25px;
+	background-color: lightblue;
+	border:2px solid pink;
+	transition:0.5s;
+}
+
+button:hover{
+	background-color:purple;
+	color:pink;
+	transform:scale(1,1);
+}
+
+.box{
+	width:100px;
+	height:50px;
+	background-color: lightgreen;
+	margin-top:50px;
+	animation:move Box 2s infinite alternate;
+}
+
+@keyframes moveBox
+	{
+	from{
+		transform:translateX(0);
+	}
+	to{
+		transform:translateX(200px);
+	}
+}
+</style>
+	</head>
+	<body> 
+		<h1> CSS effects </h1>
+	        <button> Hover me </button>
+		<div class="box"> </div>
+	</body>
+</html>
