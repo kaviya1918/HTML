@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CSS variables </title>
+<style>
+;root{
+	--main-color:purple;
+	--card-width:300px;
+}
+.card{
+	width:var(--card-width);
+	padding:20px;
+	border:2px solid var(--main-color);
+}
+
+h1{
+	color:var(--main-color);
+	font-size:clamp(25px,,5vw,50px);
+}
+
+.photo{
+	width:300px;
+	height:200px;
+	object-fit:cover;
+}
+
+button{
+	width:calc(100%-20px);
+	cursor:pointer;
+}
+
+button:disabled{
+	opacity:0.5;
+	cursor:not-allowed;
+}
+
+</style>
+<head>
+	<div class="card">
+		<h1> My profile </h1>
+		<img class="Photo" src="iamg.jpg" alt="profile">
+		<br> <br>
+		<button> contact me </button>
+		<br> <br>
+		<button disabled> Unavailable </button>
+	</div>
+	</body>
+	</html>
+
