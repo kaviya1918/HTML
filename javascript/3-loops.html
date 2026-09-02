@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> javascript loops </title>
+	</head>
+	<body>
+		<h1> javascript loops </h1>
+		<script>
+			document.write("FOR LOOP");
+			for(let i=0;i<=10;i++)
+			{
+				document.write(i+" ");
+			}
+			document.write("WHILE LOOP-EVEN NUMBERS");
+			let even=2;
+			while(even<=10)
+			{
+				document.write(even+" ");
+				even=even+2;
+			}
+			document.write("DO WHILE LOOP")
+			let j=1;
+			do{
+				document.write(j+" ");
+				j++;
+			}
+			while(j<=5);
+			document.write("NESTED LOOP");
+			for(let row=1;row<=5;row++)
+			{
+				let pattern=" ";
+			
+			for(let column=1;column<row;column++)
+			{
+				pattern=pattern+"*";
+			}
+				document.write(pattern+"<br>");
+			}
+
+			document.write("Braek and continue");
+			for(let n=1;n<=10;n++)
+			{
+				if(n===5)
+				{
+					continue;
+				}
+				if(n===8)
+				{
+					break;
+				}
+				document.write(n+" ");
+			}
+		</script>
+	
+	</body>
+</html>
+
+
+
