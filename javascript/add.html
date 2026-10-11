@@ -1,0 +1,62 @@
+<html>
+<body>
+<script>
+let a = prompt("Enter first number:");
+-- =========================================================
+-- EMPLOYEE DATABASE PROJECT
+-- Manage HR Records
+-- =========================================================
+
+CREATE DATABASE IF NOT EXISTS employee_db;
+
+USE employee_db;
+
+
+-- =========================================================
+-- 1. CREATE DEPARTMENTS TABLE
+-- =========================================================
+
+CREATE TABLE departments (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(50) NOT NULL
+);
+
+SHOW TABLES;
+
+DESC departments;
+
+
+-- =========================================================
+-- 2. CREATE MANAGERS TABLE
+-- =========================================================
+
+CREATE TABLE managers (
+    manager_id INT PRIMARY KEY,
+    manager_name VARCHAR(50) NOT NULL,
+    department_id INT,
+    FOREIGN KEY (department_id)
+        REFERENCES departments(department_id)
+);
+
+SHOW TABLES;
+
+DESC managers;
+
+
+-- =========================================================
+-- 3. CREATE EMPLOYEES TABLE
+-- =========================================================
+
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(50),
+    email VARCHAR(100) UNIQUE,
+    salary DECIMAL(10,2),
+let b = prompt("Enter second number:");
+
+let sum = a + b;
+
+document.write("Sum = " + sum);
+</script>
+</body>
+</html>
